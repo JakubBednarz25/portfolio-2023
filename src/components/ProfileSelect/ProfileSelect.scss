@@ -1,0 +1,29 @@
+main {
+    gap: 3rem;
+    // padding: 2.5rem;
+    h1 {
+      color: #fff;
+      font-size: 3.5vw;
+    }
+    .users {
+      gap: 2rem;
+      a{
+        text-decoration:none;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    main {
+      h1 {
+        font-size: 24px;
+      }
+      .users {
+        li {
+          p {
+            font-size: 3vw;
+          }
+        }
+      }
+    }
+  }

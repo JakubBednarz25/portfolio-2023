@@ -1,0 +1,27 @@
+.round-image {
+  border: 2px solid gray;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor:pointer;
+  img {
+    width: 28px;
+    height: 28px;
+  }
+  .thumbs-up {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}
+.close-btn{
+  background-color:#000;
+  border-radius:50%;
+  border:none;
+}
+.round-image:hover {
+  transition-duration: 0.25s;
+  border-color: white;
+}

@@ -1,0 +1,73 @@
+.card-small {
+  position: absolute;
+  cursor: pointer;
+  transition-duration: 0.25s;
+  .image-container {
+    position: relative;
+    .card-image {
+      border-radius: 5px;
+      // aspect-ratio: 1.77/1;
+      // min-width: 300px;
+      // max-width: 350px;
+      // width: 30vw;
+      width: 100%;
+    }
+    span {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 1.5rem;
+      font-size: min(3.5vw, 24px)
+    }
+  }
+  .hover-info {
+    display: none;
+    background-color: rgb(9, 9, 9);
+    position: relative;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    z-index: 100;
+    .row {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      justify-content: space-between;
+      img {
+        width: 40px;
+        height: 40px;
+      }
+      .group {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        .rated-12 {
+          width: 24px;
+          height: 24px;
+        }
+        .match-percent {
+          font-weight: bold;
+          color: #46d369;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .card-small:hover {
+    transform: scale(1.2);
+    transition-delay: 0.3s;
+    z-index: 999 !important;
+    .image-container {
+      img {
+        border-radius: 5px 5px 0px 0px;
+      }
+    }
+    .hover-info {
+      display: flex;
+      animation-delay: 0.3s;
+      z-index: 999 !important;
+    }
+  }
+}

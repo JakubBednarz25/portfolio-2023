@@ -1,0 +1,132 @@
+main {
+  color: #fff;
+  section,
+  .shade,
+  footer{
+    padding: 4rem;
+  }
+  .landing {
+    background-image: url("/temp-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0px;
+    .shade {
+      height: 80vw;
+      max-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      background: rgb(0, 0, 0);
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.5) 75%,
+        rgba(0, 0, 0, 0) 100%
+      );
+    }
+    h1,
+    p {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
+    }
+    .information {
+      gap: 1.25rem;
+      h1 {
+        font-size: min(4vw, 64px);
+      }
+      p {
+        font-size: min(2.5vw, 32px);
+        max-width: 800px;
+      }
+      .top-10 {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        img {
+          width: 32px;
+        }
+        b {
+          font-weight: bold;
+          font-size: 24px;
+        }
+      }
+      .buttons {
+        display: flex;
+        gap: 1.25rem;
+      }
+    }
+  }
+  .info-cards {
+    transform: translateY(-50%);
+    position: relative;
+    padding-top: 0px;
+    h2 {
+      font-size: 32px;
+      margin-bottom: 24px;
+    }
+    .wrapper {
+      display: flex;
+      gap: 1rem;
+      li {
+        position: relative;
+        min-width: 200px;
+        max-width: 350px;
+        width: 30vw;
+        aspect-ratio: 1.77/1;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  main {
+    section,
+    .shade,
+    footer{
+      padding: 1.5rem;
+    }
+    .landing {
+      .shade {
+        height: 40vh;
+        align-items: flex-end;
+      }
+      .information {
+        h1 {
+          font-size: 32px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+    .info-cards {
+      transform: none;
+      margin-top:50px;
+      .wrapper{
+        overflow-x:scroll;
+        overflow-y:hidden;
+        padding-bottom:24px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:500px){
+  main{
+    .landing{
+      .shade{
+        height:50vh;
+      }
+    }
+  }
+}
+
+@media only screen and (max-height: 800px) {
+  main {
+    .landing {
+      .shade {
+        height: 55vh;
+      }
+    }
+  }
+}

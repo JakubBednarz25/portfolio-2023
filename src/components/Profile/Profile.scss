@@ -1,0 +1,33 @@
+.profile {
+  cursor: pointer;
+  img {
+    min-width: 100px;
+    width: 20vw;
+    max-width: 200px;
+    aspect-ratio: 1/1;
+    border: 2px solid transparent;
+    border-radius: 5px;
+  }
+  p {
+    text-align: center;
+    color: rgb(182, 182, 182);
+    margin: 1rem;
+    font-size: 24px;
+  }
+}
+.profile:hover {
+  img {
+    border: 2px solid #fff;
+  }
+  p {
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .profile {
+    p {
+      font-size: 3vw;
+    }
+  }
+}
