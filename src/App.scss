@@ -123,9 +123,12 @@ main {
 
 @media only screen and (max-height: 800px) {
   main {
+    .info-cards {
+      transform: none;
+    }
     .landing {
       .shade {
-        height: 55vh;
+        // height: 75vh;
       }
     }
   }
