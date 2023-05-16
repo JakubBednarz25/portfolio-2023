@@ -128,8 +128,22 @@ main {
     }
     .landing {
       .shade {
-        // height: 75vh;
+        height: 75vh;
       }
     }
   }
 }
+
+@media only screen and (max-height: 400px) {
+  main {
+    .info-cards {
+      transform: none;
+    }
+    .landing {
+      .shade {
+        height: 100vh;
+      }
+    }
+  }
+}
+

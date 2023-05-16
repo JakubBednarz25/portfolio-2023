@@ -130,3 +130,9 @@
       bottom: 0;
     }
 }
+
+@media only screen and (max-height:1025px){
+  .popup{
+    top:65%;
+  }
+}
